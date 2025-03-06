@@ -1,7 +1,7 @@
 resource "aws_instance" "this" {
   ami           = var.ami_id
   instance_type = var.instance_type
-  subnet_id     = element(var.subnet_ids, count.index)
+  subnet_id     = var.subnet_ids
   tags = {
     Name = var.instance_name
   }
