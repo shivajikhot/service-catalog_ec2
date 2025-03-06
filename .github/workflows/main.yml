@@ -4,9 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       folder:
-        description: 'Choose Terraform folder (EC2 or VPC)'
+        description: 'Choose Terraform product (EC2,VPC..etc)'
         required: true
-        default: 'EC2'
         type: choice
         options:
           - EC2
