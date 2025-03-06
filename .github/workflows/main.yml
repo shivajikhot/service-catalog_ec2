@@ -18,8 +18,8 @@ jobs:
   package-and-upload:
     runs-on: ubuntu-latest
     env:
-      AWS_REGION: 'us-west-1'  # Change as needed
-      AWS_S3_BUCKET: 'terraform-backend-statefi'  # Replace with your S3 bucket
+      AWS_REGION: 'us-west-1'  
+      AWS_S3_BUCKET: 'terraform-backend-statefi'  
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
