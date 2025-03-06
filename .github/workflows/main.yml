@@ -28,7 +28,7 @@ jobs:
           tar -czvf ../${{ github.event.inputs.folder }}.tar.gz .
           
       - name: AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials@v3
         with:
           role-to-assume: arn:aws:iam::686255946921:role/github-OIDC
           aws-region: ${{ env.AWS_REGION }}
