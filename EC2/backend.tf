@@ -1,3 +1,4 @@
+/*
 terraform {
   backend "s3" {
     bucket         = "terraform-backend-statefi"  
@@ -6,3 +7,4 @@ terraform {
     encrypt        = true
   }
 }
+*/
